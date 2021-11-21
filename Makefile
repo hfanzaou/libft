@@ -6,7 +6,7 @@
 #    By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/07 17:29:18 by hfanzaou          #+#    #+#              #
-#    Updated: 2021/11/21 22:57:08 by hfanzaou         ###   ########.fr        #
+#    Updated: 2021/11/21 23:08:25 by hfanzaou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,8 @@ $(NAME): $(OBJSRCS)
 	$(CC) -c $< -o $@
 	ar rcs $(NAME) $@
 
+bonus: $(BOSRCS) all
+
 clean: 
 	rm -rf $(OBJSRCS) $(BOSRCS)
 
@@ -46,4 +48,3 @@ fclean: clean
 
 re: fclean all
 	
-bonus: $(OBJSRCS) $(BONUS_OBJS) $(NAME)

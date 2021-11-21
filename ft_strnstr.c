@@ -6,7 +6,7 @@
 /*   By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:17:00 by hfanzaou          #+#    #+#             */
-/*   Updated: 2021/11/16 09:30:10 by hfanzaou         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:38:47 by hfanzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	}	
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	const char *c = "see FF your FF return FF now FF";
-	const char *b = "FF";
-
-	printf("%s\n", strnstr(c, b, 31));
-	printf("%s", ft_strnstr(c, b, 31));
-}*/

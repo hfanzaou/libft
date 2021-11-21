@@ -6,12 +6,12 @@
 /*   By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 17:30:28 by hfanzaou          #+#    #+#             */
-/*   Updated: 2021/11/16 09:24:05 by hfanzaou         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:41:14 by hfanzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	ld;
 	size_t	ls;
@@ -34,17 +34,3 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size)
 		ld = size;
 	return (ls + ld);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-int main()
-{
-	char c[8] = "strs";
-	printf("%lu ", strlcat(c, "hati", sizeof(c)));
-	printf("%s\n", c);
-	char b[8] = "strs";
-	printf("%zu ", ft_strlcat(b, "hati", sizeof(b)));
-	printf("%s\n", b);
-
-}*/

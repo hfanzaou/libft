@@ -6,7 +6,7 @@
 /*   By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 05:42:26 by hfanzaou          #+#    #+#             */
-/*   Updated: 2021/11/21 03:39:14 by hfanzaou         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:19:51 by hfanzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	ft_wcount(const char *s, char c)
 		while (*s != c && *s)
 			s++;
 		if (!*s)
-			break;
+			break ;
 		s++;
 	}	
 	return (i);
@@ -68,7 +68,7 @@ static char	**ft_strmalldup(char **b, const char *s, char c)
 			i = 0;
 		}
 		if (!*s)
-			break;
+			break ;
 		s++;
 	}
 	return (b);
@@ -90,7 +90,7 @@ char	**ft_split(char const *s, char c)
 	while (*s == c && *s)
 		s++;
 	w_count = ft_wcount(s, c);
-	b = malloc(sizeof(char *) * w_count + 1);
+	b = malloc(sizeof(char *) * (w_count + 1));
 	if (b == NULL)
 		return (0);
 	ft_strmalldup(b, s, c);

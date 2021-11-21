@@ -6,7 +6,7 @@
 /*   By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:58:27 by hfanzaou          #+#    #+#             */
-/*   Updated: 2021/11/21 01:10:27 by hfanzaou         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:21:45 by hfanzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -27,5 +27,4 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	}
 	return (0);
-
 }

@@ -6,14 +6,14 @@
 /*   By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:48:11 by hfanzaou          #+#    #+#             */
-/*   Updated: 2021/11/20 20:51:41 by hfanzaou         ###   ########.fr       */
+/*   Updated: 2021/11/21 18:31:39 by hfanzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {	
-	if(lst)
+	if (lst)
 	{
 		new -> next = *lst;
 		*lst = new;

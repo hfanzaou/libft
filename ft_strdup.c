@@ -6,7 +6,7 @@
 /*   By: hfanzaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 19:44:06 by hfanzaou          #+#    #+#             */
-/*   Updated: 2021/11/16 09:18:16 by hfanzaou         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:40:25 by hfanzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -31,11 +31,3 @@ char	*ft_strdup(const char *s)
 	*dst = '\0';
 	return (p);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	printf("%s\n", strdup("khit byad"));
-	printf("%s", ft_strdup("khit byad"));
-}*/
